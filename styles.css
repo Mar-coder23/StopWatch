@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(230, 230, 230) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#stopWatchContainer{
+    height: 20em;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+#timerDiv{
+    text-align: center;
+}
+#timer{
+    font-size: 5em;
+    color: rgb(86, 152, 252);
+}
+#btns{
+    text-align: center;
+    
+}
+#btns button{
+    border: none;
+    font-size: 2em;
+    padding: .2em 2em;
+    width: 7em;
+    border-radius: 25px;
+    margin: .5em;
+    color: white;
+    background-color: rgb(86, 152, 252);
+}
+
+
+
+@media screen and (min-width: 480px){
+    #timer {
+        font-size: 7.5em;
+        color: rgb(86, 152, 252);
+    }
+    #btns button{
+        border: none;
+        font-size: 2em;
+        padding: .4em 2em;
+        width: 9em;
+        border-radius: 25px;
+        margin: .5em;
+        color: white;
+        background-color: rgb(86, 152, 252);
+    }
+}
+@media screen and (min-width: 768px){
+    #timer{
+        font-size: 7.5em;
+        color: rgb(86, 152, 252);
+    }
+    #btns button{
+        border: none;
+        font-size: 2em;
+        padding: .6em 1.6em;
+        width: 6em;
+        border-radius: 25px;
+        margin: .5em;
+        color: white;
+        background-color: rgb(86, 152, 252);
+    }
+}
+@media screen and (min-width: 992px){
+    #timer{
+        font-size: 10em;
+        color: rgb(86, 152, 252);
+    }
+    #btns button{
+        border: none;
+        font-size: 2em;
+        padding: .6em 2em;
+        width: 6.8em;
+        border-radius: 25px;
+        margin: .5em;
+        color: white;
+        background-color: rgb(86, 152, 252);
+    }
+}
+@media screen and (min-width: 1200px){
+    #timer{
+        font-size: 12em;
+        color: rgb(86, 152, 252);
+    }
+    #btns button{
+        border: none;
+        font-size: 2em;
+        padding: .6em 2em;
+        width: 7em;
+        border-radius: 25px;
+        margin: .5em;
+        color: white;
+        background-color: rgb(86, 152, 252);
+    }
+}
