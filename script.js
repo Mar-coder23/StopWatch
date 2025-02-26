@@ -8,10 +8,20 @@ const resetBtn = document.querySelector('.reset-btn');
 let timeMoving = 0;
 // create variable for setting an interval
 let interval;
+// create variable and assign to false saying timer is not running currently
+let isRunning = false;
 
 // created function when the start button is clicked
 function startTimer(){
     startBtn.addEventListener('click', () =>{
+        // if isRunning is true return it
+        if(isRunning){
+            return;
+        }
+        // if isRunning is false which it is, then assign to true since it's on and running
+        else{
+            isRunning = true;
+        }
         // set an interval for every second = 1000 miliseconds for interval
         interval = setInterval(() => {
             // increment from zero
@@ -32,6 +42,8 @@ function stopTimer(){
     stopBtn.addEventListener('click', () => {
         // clears the interval from startTimer()
         clearInterval(interval);
+        // when you stop the timer, then we want isRunning to equal false.
+        isRunning = false;
     });
     
 }
@@ -42,6 +54,8 @@ function resetTimer(){
     resetBtn.addEventListener('click', () =>{
         // have to clear interval
         clearInterval(interval);
+        // when you reset the timer we want it to display isRunning to false.
+        isRunning = false;
         // initialize timeMoving back to zero
         timeMoving = 0;
         // tell Javascript how time works
