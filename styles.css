@@ -1,9 +1,11 @@
+/* universal selector to target all of the elements */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* target the body to position */
 body{
     height: 100vh;
     width: 100%;
@@ -12,27 +14,29 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+/* positioning the stop watch container */
 #stopWatchContainer{
     height: 20em;
     width: 50em;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
-
 }
+/* aligning the timer to center of container */
 #timerDiv{
     text-align: center;
 }
+/* styling the timer display */
 #timer{
     font-size: 5em;
     color: rgb(86, 152, 252);
 }
+/* aligning the timer to center of container */
 #btns{
     text-align: center;
     
 }
+/* styling of the buttons */
 #btns button{
     border: none;
     font-size: 2em;
@@ -46,6 +50,12 @@ body{
 
 
 
+
+
+
+
+
+/* when the width is between 480 and 768 have these styling */
 @media screen and (min-width: 480px){
     #timer {
         font-size: 7.5em;
@@ -62,6 +72,9 @@ body{
         background-color: rgb(86, 152, 252);
     }
 }
+
+
+/* when the width is between 768 and 992 have these styling */
 @media screen and (min-width: 768px){
     #timer{
         font-size: 7.5em;
@@ -78,6 +91,10 @@ body{
         background-color: rgb(86, 152, 252);
     }
 }
+
+
+
+/* when the width is between 992 and 1200 have these styling */
 @media screen and (min-width: 992px){
     #timer{
         font-size: 10em;
@@ -94,6 +111,10 @@ body{
         background-color: rgb(86, 152, 252);
     }
 }
+
+
+
+/* wjen the width is between 1200 and max width have these styling */
 @media screen and (min-width: 1200px){
     #timer{
         font-size: 12em;
