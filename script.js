@@ -28,8 +28,8 @@ function startTimer(){
             timeMoving++;
             // tell Javascript how time works
             const hours = Math.floor(timeMoving / 3600);
-            const minutes = Math.floor((timeMoving % 3600) / 100);
-            const seconds = timeMoving % 100;
+            const minutes = Math.floor((timeMoving % 3600) / 60);
+            const seconds = timeMoving % 60;
             // change the text content of timer in HTML with padStarts to change timer 
             timer.textContent = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
         }, 1000);
